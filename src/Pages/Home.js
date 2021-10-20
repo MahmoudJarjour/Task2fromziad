@@ -1,0 +1,28 @@
+import React from "react";
+import {Container,Typography} from '@mui/material'
+import Block1 from "../Components/Block1";
+import Cards from "../Components/Cards";
+import Block2 from "../Components/Block2";
+
+const Home = () => {
+  return (
+    
+     <Container>
+         <Container>
+        <Block1 />
+
+        <Container>
+          <Cards />
+        </Container>
+      </Container>
+
+      <Container>
+        <Block2 />
+      </Container>
+     </Container>
+      
+    
+  )
+};
+
+export default Home;
