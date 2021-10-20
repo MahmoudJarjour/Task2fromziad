@@ -1,0 +1,28 @@
+{
+	"Criminal Court of Appeal:": "محكمة الاستئناف الجزائية",
+	"- Within every governorate, there is one or more courts of appeal.": "في نطاق كل محافظة محكمة استئناف آو آكثر -",
+	"- The Court of Appeal consists of 3 judges: a president and two consultants.": "- تتآلف محكمة الاستئناف من ٣ قضاة رئيس و مستشارين - ",
+	"- The public prosecution is represented before the Court of Appeal by the Appellate Public Prosecutor or an Attorney General.": "تتمثل النيابة العامة آمام محكمة الاستئناف آما بالنائب العام الاستئنافي آو بآحد المحامين العامين",
+
+	"Their jurisdiction:": "اختصاصها :",
+	"The Court of Appeal considers the appeal of all judgments issued by the Criminal Single Judge in the cases of misdemeanors,": "تنظر محكمة الاستئناف في استئناف جميع الآحكام الصادرة عن القاضي المنفرد الجزائي في قضايا الجنح٬ شرط آن تكون قد فصلت في الآساس النزاع آما اذا لم تكن قد فصلت في الآساس النزاع فلا يجوز استئنافها الا مع الحكم النهائي",
+	"With the exception of:": "استثناء على ذلك :",
+	"The appeal of decisions that settle one or more of the formal defenses stipulated in Article 73 of the Criminal Procedures Code shall be accepted.": "يقبل استئناف القرارات التي تفصل دفع آو آكثر من الدفوع الشكلية المنصوص عليها في المادة ٧٣ من أصول المحاكمات الجزائية",
+	"Decisions by which the Single Judge terminates the lawsuit without addressing its subject matter.": "القرارات التي ينهي بها القاضي المنفرد الدعوى من دون أن يتعرض لموضوعها",
+	"Decisions issued on accepting or revoking the release requests.": "القرارات الصادرة في قبول أو رد طلبات إخلاء السبيل ",
+	"The Court of Appeal considers the appeal of the judgments issued by the Criminal Single Judge in the cases of violations, provided that they shall be on:": "تنظر محكمة اللاستئناف في استئناف الأحكام الصادرة عن القاضي المنفرد الجزائي في المخالفات شرط أن تكون قد قضت ب :",
+
+	"404 Page": "٤٠٤ صفحة فارغة",
+
+	"Delay of appeal:": " : مهلة الاستئناف",
+	"Final judgments:": "الأحكام النهائية:",
+	"Decisions of the Court of Appeal:": "قرارات المحكمة الاسئنافية ",
+	"Dissolution of the appealed judgment.": "فسخ الحكم المستأنف",
+	"Legalization of the appealed judgment.": "تصديق الحكم المستأنف ",
+
+	"The appeal shall be submitted through a lawyer.": "يجب أن يقدم الاستئناف بواسطة محام",
+
+	"Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:": "قرار رد أو قبول الدفوع الواردة في المادة 73 من قانون أصول المحاكمات الجزائية:",
+
+	"The Court of Appeal is entitled, when exercising its tasks, to listen to witnesses, interrogate the parties of the lawsuit, invite new witnesses, appoint an expert, listen to experts and carry out any new investigations it deems appropriate...": "لمحكمة الاستئناف عند ممارستها مهامها أن تستمع إلى الشهود، تستجوب أطراف الدعوى ، دعوة شهود جدد، تعيين خيبر ، الاستماع إلى أصحاب الخبرة وإجراء أي تحقيقات جديدة تراها مناسبة ..."
+}

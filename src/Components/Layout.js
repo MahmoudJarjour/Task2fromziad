@@ -1,32 +1,28 @@
-import React from "react";
-import { Container, AppBar, Toolbar, Typography } from "@mui/material";
+import React from 'react';
+import { Container, AppBar, Toolbar, Typography } from '@mui/material';
+import i18next from 'i18next';
+import i18n from '../Locales/i18n';
 
-import Cards from "./Cards";
-import Block1 from "./Block1";
-import HeaderBar from "./HeaderBar";
-import Home from "../Pages/Home";
-import { withTranslation } from "react-i18next";
+import HeaderBar from './HeaderBar';
+import Home from '../Pages/Home';
+import { withTranslation, useTranslation } from 'react-i18next';
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      {/* App Bar */}
+	return (
+		<>
+			{/* App Bar */}
 
-      <Container>
-        <HeaderBar />
-      </Container>
+			<Container>
+				<HeaderBar />
+			</Container>
 
-      {/* Content */}
+			{/* Content */}
 
+			<Container>{children}</Container>
 
-        <Container>
-        {children}
-        </Container>    
-
-     
-      {/* Grids */}
-    </>
-  );
+			{/* Grids */}
+		</>
+	);
 };
 
 export default withTranslation()(Layout);
