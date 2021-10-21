@@ -4,7 +4,6 @@ import { useTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
 
-
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 
 const data3 = [
@@ -39,35 +38,77 @@ const Block3 = () => {
 		<>
 			<Container>
 				<Grid container spacing={15} columns={16}>
-					{
-					getLanguage() === 'en'? 
-					data3.map((item) => (
-						<Grid item xs={6} key={item.id}>
-							<Typography backgroundColor="gray" borderRadius>
-								{' '}
-								{item.cardheader}{' '}
-							</Typography>
+					{getLanguage() === 'en'
+						? data3.map((item) => (
+								<Grid item xs={6} key={item.id}>
+									<Typography
+										backgroundColor="gray"
+										style={{
+											fontFamily:'Georgia',
+											color: 'white',
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderBottomRightRadius: '20px',
+											textAlign: 'center',
+											paddingLeft: '5px',
+											marginLeft: '5px',
+										}}
+										borderRadius
+									>
+										{' '}
+										{item.cardheader}{' '}
+									</Typography>
 
-							<Typography backgroundColor="#C0E8D5" borderRadius>
-								{item.cardcontent}
-							</Typography>
-						</Grid>
-					)):
-					data3Ar.map((item) => (
-						<Grid item xs={6} key={item.id}>
-							<Typography backgroundColor="gray" borderRadius>
-								{' '}
-								{item.cardheader}{' '}
-							</Typography>
+									<Typography style={{
+										fontFamily:'Georgia',
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderBottomRightRadius: '20px',
+											paddingLeft:getLanguage()==='en'?'15px':'',
+											paddingRight:getLanguage()==='ar'?'15px':'',
+											marginLeft: '5px',
+											}} borderRadius>
+										{item.cardcontent}
+									</Typography>
+								</Grid>
+						  ))
+						: data3Ar.map((item) => (
+								<Grid item xs={6} key={item.id}>
+									<Typography backgroundColor="gray" style={{
+											fontFamily:'Georgia',
+											color: 'white',
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderEndEndRadius: '20px',
+											textAlign: 'center',
+											paddingLeft: '5px',
+											marginLeft: '5px',
+										}} borderRadius>
+										{' '}
+										{item.cardheader}{' '}
+									</Typography>
 
-							<Typography backgroundColor="#C0E8D5" borderRadius>
-								{item.cardcontent}
-							</Typography>
-						</Grid>
-					))}
+									<Typography style={{
+										fontFamily:'Georgia',
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderBottomRightRadius: '20px',
+											paddingLeft:getLanguage()==='en'?'15px':'',
+											paddingRight:getLanguage()==='ar'?'15px':'',
+											
+											marginLeft: '5px',
+											}} borderRadius>
+										{item.cardcontent}
+									</Typography>
+								</Grid>
+						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1">{t('The appeal shall be submitted through a lawyer.')}</Typography>
+				<Typography style={{textAlign:getLanguage()==='ar'?'right':'left',fontFamily:'Georgia',fontWeight:'revert'}}variant="subtitle1">{t('The appeal shall be submitted through a lawyer.')}</Typography>
 			</Container>
 		</>
 	);

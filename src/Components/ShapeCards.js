@@ -4,8 +4,6 @@ import { useTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
 
-
-
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 const data2 = [
 	{
@@ -49,28 +47,65 @@ const ShapeCards = () => {
 		<>
 			<Container>
 				<Grid container spacing={4} columns={20}>
-					{getLanguage() === 'en'? data2.map((item) => (
-						<Grid item xs={7} key={item.id}>
-							<Typography backgroundColor="#7CB9E8" borderRadius>
-								{item.cardheader}
-							</Typography>
-							<Typography backgroundColor="#B2BEB5" borderRadius>
-								{item.cardcontent}
-							</Typography>
-						</Grid>
-					)) : data2Ar.map((item) => (
-						<Grid item xs={7} key={item.id}>
-							<Typography backgroundColor="#7CB9E8" borderRadius>
-								{item.cardheader}
-							</Typography>
-							<Typography backgroundColor="#B2BEB5" borderRadius>
-								{item.cardcontent}
-							</Typography>
-						</Grid>
-					))}
+					{getLanguage() === 'en'
+						? data2.map((item) => (
+								<Grid item xs={6} key={item.id}>
+									<Typography
+										backgroundColor="#B2FFFF"
+										style={{
+											border: '1px solid #00FFFF',
+											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
+											width: '70%',
+											padding: '7%',
+											margin: '10px',
+											fontFamily:'Georgia' ,
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderBottomRightRadius: '20px',
+										}}
+									>
+										{item.cardheader}
+									</Typography>
+									<Typography backgroundColor="#8A2BE2" style={{ color: 'white' ,fontFamily:'Georgia' ,padding:'20px', borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderBottomRightRadius: '20px', }} borderRadius>
+										{item.cardcontent}
+									</Typography>
+								</Grid>
+						  ))
+						: data2Ar.map((item) => (
+								<Grid item xs={6} key={item.id}>
+									<Typography
+										backgroundColor="#B2FFFF"
+										style={{
+											border: '1px solid #00FFFF',
+											textAlign: getLanguage() === 'en' ? 'left' : 'right',
+											width: '70%',
+											padding: '6%',
+											margin: '10px',
+											fontFamily:'Georgia', 
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderEndEndRadius: '20px',
+										}}
+									>
+										{item.cardheader}
+									</Typography>
+									<Typography backgroundColor="#8A2BE2" style={{ color: 'white', fontFamily:'Georgia' ,padding:'20px',
+											borderTopLeftRadius: '20px',
+											borderEndStartRadius: '20px',
+											borderTopRightRadius: '20px',
+											borderEndEndRadius: '20px', }} borderRadius>
+										{item.cardcontent}
+									</Typography>
+								</Grid>
+						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1" backgroundColor="#C46210" borderRadius>
+				<Typography variant="subtitle1" style={{ color: 'white' , fontFamily:'Georgia' }} backgroundColor="#C46210" borderRadius>
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>

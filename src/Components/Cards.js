@@ -11,22 +11,26 @@ const data = [
 	{
 		id: 1,
 		discription: 'Imprisonment, preventive detention or a ne of more than ve hundred thousand Lebanese pounds.',
-		color: '#A1CAF1',
+		color: '#F5F5F5',
+		border:'10px solid #A1CAF1'
 	},
 	{
 		id: 2,
 		discription: 'Additional or secondary penalty or personal compensations of more than ve hundred thousand Lebanese pounds.',
-		color: '#FF9966',
+		color: '#F5F5F5',
+		border:'10px solid #DA1884'
 	},
 	{
 		id: 3,
 		discription: 'Revocation of defense stipulated in Article 73 of the Criminal Procedures Code.',
-		color: '#FF91AF',
+		color: '#F5F5F5',
+		border:'10px solid #FE6F5E'
 	},
 	{
 		id: 4,
 		discription: 'Penalty for a violation correlative with a misdemeanor.',
-		color: '#87A96B',
+		color: '#F5F5F5',
+		border:'10px solid #318CE7',
 	},
 ];
 
@@ -34,22 +38,26 @@ const dataAr = [
 	{
 		id: 1,
 		discription: 'الحبس زأو التوقيف التكديري أو غرامة تزيد على ٥٠٠ ألف ليرة لبنانية',
-		color: '#A1CAF1',
+		color: '#F5F5F5',
+		border:'10px solid #A1CAF1'
 	},
 	{
 		id: 2,
 		discription: 'عقوبة إضافية أو فرعية أو تعويضات شخصية تزيد على الخمسمائة ألف ليرة لبنانية',
-		color: '#FF9966',
+		color: '#F5F5F5',
+		border:'10px solid #DA1884'
 	},
 	{
 		id: 3,
 		discription: 'رد من الدفوع المنصوص عليها في المادة ٧٣ من قانون أصول المحاكمات الجزائية',
-		color: '#FF91AF',
+		color: '#F5F5F5',
+		border:'10px solid #FE6F5E'
 	},
 	{
 		id: 4,
 		discription: 'عقوبة لمخالفة متلازمة مع جنحة',
-		color: '#87A96B',
+		color: '#F5F5F5',
+		border:'10px solid #318CE7'
 	},
 ];
 
@@ -57,24 +65,34 @@ const Cards = ({ card }) => {
 	const { t } = useTranslation();
 	return (
 		<Container>
-			<Grid container spacing={15} columns={16}>
+			<Grid container spacing={12} columns={16}>
 				{getLanguage() === 'ar'
 					? dataAr.map((item) => (
 							<Grid item xs={4} key={item.id}>
-								<Typography backgroundColor={item.color} borderRadius>
+								<Typography
+								
+									style={{fontFamily: 'georgia',borderRadius: '100%',textAlign:'center', width: '70%',height:'60%', padding: '20%', margin:'10%' }}
+									border={item.border}
+									backgroundColor={item.color}
+								>
 									{item.discription}
 								</Typography>
 							</Grid>
 					  ))
 					: data.map((item) => (
 							<Grid item xs={4} key={item.id}>
-								<Typography backgroundColor={item.color} borderRadius>
+								<Typography
+									style={{ fontFamily: 'georgia', borderRadius: '100%',textAlign:'center', width: '100%',height:'60%', padding: '20%',margin:'10%' }}
+									border={item.border}
+									backgroundColor={item.color}
+									
+								>
 									{item.discription}
 								</Typography>
 							</Grid>
 					  ))}
 			</Grid>
-			<Typography variant="h5">
+			<Typography style={{fontFamily: 'georgia',paddingBottom:'20px',paddingTop:'90px'}} variant="h5">
 				<PushPinTwoToneIcon color="success" fontSize="large" />
 				{t(
 					'The Court of Appeal is entitled, when exercising its tasks, to listen to witnesses, interrogate the parties of the lawsuit, invite new witnesses, appoint an expert, listen to experts and carry out any new investigations it deems appropriate...'

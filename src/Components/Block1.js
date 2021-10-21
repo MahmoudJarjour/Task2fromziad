@@ -24,10 +24,12 @@ const Block1 = () => {
 	return (
 		<Container>
 			<Container className={classes.bodyblock1}>
-				<Typography variant="h4">{t('Their jurisdiction:')}</Typography>
+				<Typography style={{ fontFamily: 'serif', fontWeight: 'bold', margin: '10px' }} variant="h4">
+					{t('Their jurisdiction:')}
+				</Typography>
 
 				<Container>
-					<Typography variant="h6">
+					<Typography style={{ fontFamily: 'georgia' }} variant="h6">
 						{' '}
 						<DoubleArrowIcon color="secondary" fontSize="small" />
 						{t('The Court of Appeal considers the appeal of all judgments issued by the Criminal Single Judge in the cases of misdemeanors,')}
@@ -35,36 +37,38 @@ const Block1 = () => {
 				</Container>
 
 				<Container>
-					<Typography variant="h4">{t('With the exception of:')}</Typography>
-				</Container>
+					<Typography style={{ fontFamily: 'serif', fontWeight: 'bold', margin: '10px' }} variant="h4">
+						{t('With the exception of:')}
+					</Typography>
 
-				<Container>
-					<Typography variant="h5">
-						{' '}
-						<DoubleArrowIcon color="secondary" fontSize="large" />
-						{t(
-							'The appeal of decisions that settle one or more of the formal defenses stipulated in Article 73 of the Criminal Procedures Code shall be accepted.'
-						)}
-					</Typography>
-				</Container>
-				<Container>
-					<Typography variant="h5">
-						{' '}
-						<DoubleArrowIcon color="secondary" fontSize="large" />
-						{t('Decisions by which the Single Judge terminates the lawsuit without addressing its subject matter.')}
-					</Typography>
-				</Container>
-				<Container>
-					<Typography variant="h5">
-						{' '}
-						<DoubleArrowIcon color="secondary" fontSize="large" />
-						{t('Decisions issued on accepting or revoking the release requests.')}
-					</Typography>
+					<Container>
+						<Typography style={{ fontFamily: 'georgia' }} variant="h5">
+							{' '}
+							<DoubleArrowIcon color="secondary" fontSize="large" />
+							{t(
+								'The appeal of decisions that settle one or more of the formal defenses stipulated in Article 73 of the Criminal Procedures Code shall be accepted.'
+							)}
+						</Typography>
+					</Container>
+					<Container>
+						<Typography style={{ fontFamily: 'georgia' }} variant="h5">
+							{' '}
+							<DoubleArrowIcon color="secondary" fontSize="large" />
+							{t('Decisions by which the Single Judge terminates the lawsuit without addressing its subject matter.')}
+						</Typography>
+					</Container>
+					<Container>
+						<Typography style={{ fontFamily: 'georgia' }} variant="h5">
+							{' '}
+							<DoubleArrowIcon color="secondary" fontSize="large" />
+							{t('Decisions issued on accepting or revoking the release requests.')}
+						</Typography>
+					</Container>
 				</Container>
 			</Container>
 
 			<Container>
-				<Typography variant="h5" paddingTop="30px">
+				<Typography style={{ fontFamily: 'georgia' , paddingBottom:'50px' }} variant="h5" paddingTop="30px">
 					<SearchIcon fontSize="small" color="success" />
 					{t(
 						'The Court of Appeal considers the appeal of the judgments issued by the Criminal Single Judge in the cases of violations, provided that they shall be on:'
