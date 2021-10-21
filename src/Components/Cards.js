@@ -64,8 +64,8 @@ const dataAr = [
 const Cards = ({ card }) => {
 	const { t } = useTranslation();
 	return (
-		<Container>
-			<Grid container spacing={12} columns={16}>
+		<Container display='flex'>
+			<Grid container  spacing={16} columns={16} >
 				{getLanguage() === 'ar'
 					? dataAr.map((item) => (
 							<Grid item xs={4} key={item.id}>
@@ -73,11 +73,13 @@ const Cards = ({ card }) => {
 									style={{ fontFamily: 'georgia',
 										borderRadius: '100%',
 										textAlign: 'center',
+										fontSize:'12px',
+										fontWeight:'bold',
 										width: '70%',
 										height: '60%',
+										padding: 'auto',
 										padding: '40%',
 										margin: '10%',
-										paddingTop:'20%',
 										paddingBottom:'20%',
 										display:'grid',
 										justifyContent:'center',
@@ -94,8 +96,10 @@ const Cards = ({ card }) => {
 								<Typography
 									style={{
 										fontFamily: 'georgia',
+										fontWeight:'bold',
 										borderRadius: '100%',
 										textAlign: 'center',
+										fontSize:'12px',
 										width: '70%',
 										height: '60%',
 										padding: '40%',

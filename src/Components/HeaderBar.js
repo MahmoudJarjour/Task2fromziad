@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 		height: '30px',
 	},
 	AppBar: {
-		backgroundColor: '#483D8B',
+		backgroundColor: '#0f9fc1',
 
 		borderTopRightRadius: getLanguage() === 'ar' ? '80px' : '0px',
 		borderEndStartRadius: getLanguage() === 'ar' ? '80px' : '80px',
@@ -49,7 +49,7 @@ const HeaderBar = () => {
 						</Typography>
 					</Container>
 
-					<Container paddingLeft='-10px'>
+					<Container paddingLeft="-10px">
 						<Typography style={{ fontFamily: 'georgia', paddingLeft: '-10px', paddingRight: getLanguage() === 'ar' ? '5px' : '' }} variant="subtitle1">
 							{t('- Within every governorate, there is one or more courts of appeal.')}
 						</Typography>

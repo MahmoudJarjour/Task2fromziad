@@ -46,7 +46,7 @@ const ShapeCards = () => {
 	return (
 		<>
 			<Container>
-				<Grid container spacing={4} columns={20}>
+				<Grid container spacing={16} columns={20}>
 					{getLanguage() === 'en'
 						? data2.map((item) => (
 								<Grid item xs={6} key={item.id}>
@@ -56,39 +56,45 @@ const ShapeCards = () => {
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
 											width: '102%',
-											height:'25%',
+											height: '25%',
 											padding: '5%',
 											margin: '10%',
-											fontFamily:'Georgia' ,
+											fontFamily: 'Georgia',
+											fontSize:'12px',
+											fontWeight:'bold',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderBottomRightRadius: '20px',
-											display:'grid',
-											alignContent:'center',
-											justifyContent:'center'
-
+											display: 'grid',
+											alignContent: 'center',
+											justifyContent: 'center',
 										}}
 									>
 										{item.cardheader}
 									</Typography>
-									<Typography  style={{ 
+									<Typography
+										style={{
 											color: 'black',
-											backgroundColor:'#B2BEB5',
-											fontFamily:'Georgia' ,
+											backgroundColor: '#B2BEB5',
+											fontFamily: 'Georgia',
+											fontSize:'12px',
+											fontWeight:'bold',
 											width: '100%',
-											height:'35%',
+											height: '35%',
 											padding: '7%',
 											margin: '10%',
-											paddingBottom:'20px',
+											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderEndEndRadius: '20px',
-											display:'grid',
-											alignContent:'center',
-											justifyContent:'center'
-											}} borderRadius>
+											display: 'grid',
+											alignContent: 'center',
+											justifyContent: 'center',
+										}}
+										borderRadius
+									>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
@@ -100,46 +106,53 @@ const ShapeCards = () => {
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'en' ? 'left' : 'right',
-											width: '99%',
-											height:'25%',
+											width: '98%',
+											height: '25%',
 											padding: '7%',
 											margin: '10%',
-											fontFamily:'Georgia', 
+											fontFamily: 'Georgia',
+											fontSize:'12px',
+											fontWeight:'bold',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderEndEndRadius: '20px',
-											display:'grid',
-											alignContent:'center',
-											justifyContent:'center'
+											display: 'grid',
+											alignContent: 'center',
+											justifyContent: 'center',
 										}}
 									>
 										{item.cardheader}
 									</Typography>
-									<Typography style={{ 
+									<Typography
+										style={{
 											color: 'black',
-											backgroundColor:'#B2BEB5',
-											fontFamily:'Georgia' ,
+											backgroundColor: '#B2BEB5',
+											fontFamily: 'Georgia',
+											fontSize:'12px',
+											fontWeight:'bold',
 											width: '100%',
-											height:'25%',
+											height: '25%',
 											padding: '7%',
 											margin: '10%',
-											paddingBottom:'20px',
+											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderEndEndRadius: '20px',
-											display:'grid',
-											alignContent:'center',
-											justifyContent:'center'
-											}}borderRadius>
+											display: 'grid',
+											alignContent: 'center',
+											justifyContent: 'center',
+										}}
+										borderRadius
+									>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
 						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1" style={{ color: 'white' , fontFamily:'Georgia' ,padding:'5px' }} backgroundColor="#7366BD" borderRadius>
+				<Typography variant="subtitle1" style={{ color: 'white', fontFamily: 'Georgia', padding: '5px' }} backgroundColor="#0f9fc1" borderRadius>
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>

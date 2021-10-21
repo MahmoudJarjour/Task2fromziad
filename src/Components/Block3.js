@@ -44,8 +44,10 @@ const Block3 = () => {
 									<Typography
 										backgroundColor="gray"
 										style={{
-											fontFamily:'Georgia',
+											fontFamily: 'Georgia',
 											color: 'white',
+											fontWeight:'bold',
+											fontSize:'13px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -60,24 +62,31 @@ const Block3 = () => {
 										{item.cardheader}{' '}
 									</Typography>
 
-									<Typography style={{
-										fontFamily:'Georgia',
+									<Typography
+										style={{
+											fontFamily: 'Georgia',
+											fontWeight:'bold',
+											fontSize:'13px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderBottomRightRadius: '20px',
-											paddingLeft:getLanguage()==='en'?'15px':'',
-											paddingRight:getLanguage()==='ar'?'15px':'',
+											paddingLeft: getLanguage() === 'en' ? '15px' : '',
+											paddingRight: getLanguage() === 'ar' ? '15px' : '',
 											marginLeft: '5px',
-											}} borderRadius>
+										}}
+										borderRadius
+									>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
 						  ))
 						: data3Ar.map((item) => (
 								<Grid item xs={6} key={item.id}>
-									<Typography backgroundColor="gray" style={{
-											fontFamily:'Georgia',
+									<Typography
+										backgroundColor="gray"
+										style={{
+											fontFamily: 'Georgia',
 											color: 'white',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
@@ -86,29 +95,36 @@ const Block3 = () => {
 											textAlign: 'center',
 											paddingLeft: '5px',
 											marginLeft: '5px',
-										}} borderRadius>
+										}}
+										borderRadius
+									>
 										{' '}
 										{item.cardheader}{' '}
 									</Typography>
 
-									<Typography style={{
-										fontFamily:'Georgia',
+									<Typography
+										style={{
+											fontFamily: 'Georgia',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderBottomRightRadius: '20px',
-											paddingLeft:getLanguage()==='en'?'15px':'',
-											paddingRight:getLanguage()==='ar'?'15px':'',
-											
+											paddingLeft: getLanguage() === 'en' ? '15px' : '',
+											paddingRight: getLanguage() === 'ar' ? '15px' : '',
+
 											marginLeft: '5px',
-											}} borderRadius>
+										}}
+										borderRadius
+									>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
 						  ))}
 				</Grid>
 				<br />
-				<Typography style={{textAlign:getLanguage()==='ar'?'right':'left',fontFamily:'Georgia',fontWeight:'revert'}}variant="subtitle1">{t('The appeal shall be submitted through a lawyer.')}</Typography>
+				<Typography style={{ textAlign: getLanguage() === 'ar' ? 'right' : 'left', fontFamily: 'Georgia', fontWeight: 'revert' }} variant="subtitle1">
+					{t('The appeal shall be submitted through a lawyer.')}
+				</Typography>
 			</Container>
 		</>
 	);
