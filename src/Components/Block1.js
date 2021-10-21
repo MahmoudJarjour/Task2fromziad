@@ -69,7 +69,7 @@ const Block1 = () => {
 
 			<Container>
 				<Typography style={{ fontFamily: 'georgia' , paddingBottom:'50px' }} variant="h5" paddingTop="30px">
-					<SearchIcon fontSize="small" color="success" />
+					<SearchIcon fontSize="large" color="success" />
 					{t(
 						'The Court of Appeal considers the appeal of the judgments issued by the Criminal Single Judge in the cases of violations, provided that they shall be on:'
 					)}

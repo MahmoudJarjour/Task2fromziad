@@ -14,11 +14,11 @@
 
 	"404 Page": "٤٠٤ صفحة فارغة",
 
-	"Delay of appeal :": "  مهلة الاستئناف : ",
+	"Delay of appeal:": "  مهلة الاستئناف : ",
 	"Final judgments:": "الأحكام النهائية:",
-	"Decisions of the Court of Appeal:": "قرارات المحكمة الاسئنافية ",
-	"Dissolution of the appealed judgment.": "فسخ الحكم المستأنف",
-	"Legalization of the appealed judgment.": "تصديق الحكم المستأنف ",
+	"Decisions of the Court of Appeal:": "- قرارات المحكمة الاسئنافية ",
+	"Dissolution of the appealed judgment.": "* فسخ الحكم المستأنف",
+	"Legalization of the appealed judgment.": "* تصديق الحكم المستأنف ",
 
 	"The appeal shall be submitted through a lawyer.": "يجب أن يقدم الاستئناف بواسطة محام",
 

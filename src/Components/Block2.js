@@ -11,9 +11,9 @@ const Block2 = () => {
 	return (
 		<>
 			<Container>
-				<Typography style={{ fontFamily: 'georgia', fontWeight:'bold' ,textDecoration:'underline'}} variant="h4">{t('Delay of appeal :')}</Typography>
+				<Typography style={{ fontFamily: 'georgia', fontWeight:'bold' ,textDecoration:'underline'}} variant="h4">{t('Delay of appeal:')}</Typography>
 				<br />
-				<Typography style={{ fontFamily:'serif',backgroundColor:'#FF9966',color:'white' , borderRadius:'10px',padding:'10px'}} variant="h5" color="#E52B50">
+				<Typography style={{ fontFamily:'serif',backgroundColor:'#7366BD',color:'white' , borderRadius:'10px',padding:'10px'}} variant="h5" color="#E52B50">
 					{t('Final judgments:')}
 				</Typography>
 				<br />
@@ -26,12 +26,12 @@ const Block2 = () => {
 
 					<Grid columnSpacing={{ xs: 6, sm: 6, md: 6 }}>
 						<Grid item xs={6}>
-							<Typography style={{fontFamily:'Georgia', margin:'5px'}} backgroundColor="#C0E8D5" borderRadius>
+							<Typography style={{fontFamily:'Georgia', margin:'5px', display:'grid',alignContent:'center',justifyContent:'center'}} backgroundColor="#C0E8D5" borderRadius>
 								{t('Dissolution of the appealed judgment.')}
 							</Typography>
 						</Grid>
 						<Grid item xs={6}>
-							<Typography style={{fontFamily:'Georgia', margin:'5px'}} backgroundColor="#C0E8D5" borderRadius>
+							<Typography style={{fontFamily:'Georgia', margin:'5px', display:'grid', justifyContent:'center',alignContent:'center'}} backgroundColor="#C0E8D5" borderRadius>
 								{t('Legalization of the appealed judgment.')}
 							</Typography>
 						</Grid>

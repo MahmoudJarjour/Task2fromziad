@@ -10,12 +10,12 @@ const data3 = [
 	{
 		id: 1,
 		cardheader: 'With respect to the Public Prosecution,the delay is 24 hours:',
-		cardcontent: 'As of the date of issuance of the decision.',
+		cardcontent: '* As of the date of issuance of the decision.',
 	},
 	{
 		id: 2,
 		cardheader: 'With respect to the opponents, the delay is 24 hours:',
-		cardcontent: 'As of the date of notifying the opponents of the same.',
+		cardcontent: '* As of the date of notifying the opponents of the same.',
 	},
 ];
 
@@ -23,12 +23,12 @@ const data3Ar = [
 	{
 		id: 1,
 		cardheader: 'بالنسبة للنيابة العامة ، المهلة هي ٢٤ ساعة',
-		cardcontent: 'من تاريخ صدور القرار',
+		cardcontent: '* من تاريخ صدور القرار',
 	},
 	{
 		id: 2,
 		cardheader: 'بالنسبة للخصوم ، المهلة هي ٢٤ ساعة',
-		cardcontent: 'من تاريخ تبليغه للخصوم ',
+		cardcontent: '* من تاريخ تبليغه للخصوم ',
 	},
 ];
 

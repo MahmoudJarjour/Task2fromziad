@@ -55,22 +55,40 @@ const ShapeCards = () => {
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
-											width: '70%',
-											padding: '7%',
-											margin: '10px',
+											width: '102%',
+											height:'25%',
+											padding: '5%',
+											margin: '10%',
 											fontFamily:'Georgia' ,
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderBottomRightRadius: '20px',
+											display:'grid',
+											alignContent:'center',
+											justifyContent:'center'
+
 										}}
 									>
 										{item.cardheader}
 									</Typography>
-									<Typography backgroundColor="#8A2BE2" style={{ color: 'white' ,fontFamily:'Georgia' ,padding:'20px', borderTopLeftRadius: '20px',
+									<Typography  style={{ 
+											color: 'black',
+											backgroundColor:'#B2BEB5',
+											fontFamily:'Georgia' ,
+											width: '100%',
+											height:'35%',
+											padding: '7%',
+											margin: '10%',
+											paddingBottom:'20px',
+											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
-											borderBottomRightRadius: '20px', }} borderRadius>
+											borderEndEndRadius: '20px',
+											display:'grid',
+											alignContent:'center',
+											justifyContent:'center'
+											}} borderRadius>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
@@ -82,30 +100,46 @@ const ShapeCards = () => {
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'en' ? 'left' : 'right',
-											width: '70%',
-											padding: '6%',
-											margin: '10px',
+											width: '99%',
+											height:'25%',
+											padding: '7%',
+											margin: '10%',
 											fontFamily:'Georgia', 
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
 											borderEndEndRadius: '20px',
+											display:'grid',
+											alignContent:'center',
+											justifyContent:'center'
 										}}
 									>
 										{item.cardheader}
 									</Typography>
-									<Typography backgroundColor="#8A2BE2" style={{ color: 'white', fontFamily:'Georgia' ,padding:'20px',
+									<Typography style={{ 
+											color: 'black',
+											backgroundColor:'#B2BEB5',
+											fontFamily:'Georgia' ,
+											width: '100%',
+											height:'25%',
+											padding: '7%',
+											margin: '10%',
+											paddingBottom:'20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
-											borderEndEndRadius: '20px', }} borderRadius>
+											borderEndEndRadius: '20px',
+											display:'grid',
+											alignContent:'center',
+											justifyContent:'center'
+											}}borderRadius>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
 						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1" style={{ color: 'white' , fontFamily:'Georgia' }} backgroundColor="#C46210" borderRadius>
+				<Typography variant="subtitle1" style={{ color: 'white' , fontFamily:'Georgia' ,padding:'5px' }} backgroundColor="#7366BD" borderRadius>
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>
