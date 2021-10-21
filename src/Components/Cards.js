@@ -37,7 +37,7 @@ const data = [
 const dataAr = [
 	{
 		id: 1,
-		discription: 'الحبس زأو التوقيف التكديري أو غرامة تزيد على ٥٠٠ ألف ليرة لبنانية',
+		discription: 'الحبس أو التوقيف التكديري أو غرامة تزيد على ٥٠٠ ألف ليرة لبنانية',
 		color: '#F5F5F5',
 		border:'10px solid #A1CAF1'
 	},
