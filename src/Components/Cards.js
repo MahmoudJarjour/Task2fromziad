@@ -64,26 +64,28 @@ const dataAr = [
 const Cards = ({ card }) => {
 	const { t } = useTranslation();
 	return (
-		<Container display='flex'>
-			<Grid container  spacing={16} columns={16} >
+		<Container display="flex">
+			<Grid container  spacing={18} columnSpacing={16} >
 				{getLanguage() === 'ar'
 					? dataAr.map((item) => (
-							<Grid item xs={4} key={item.id}>
+							<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
 								<Typography
-									style={{ fontFamily: 'georgia',
+									style={{
+										fontFamily: 'georgia',
+										fontWeight: 'bold',
 										borderRadius: '100%',
 										textAlign: 'center',
-										fontSize:'12px',
-										fontWeight:'bold',
-										width: '70%',
-										height: '60%',
-										padding: 'auto',
+										fontSize: '16px',
+										width: '25%',
+										height: '45%',
 										padding: '40%',
 										margin: '10%',
-										paddingBottom:'20%',
-										display:'grid',
-										justifyContent:'center',
-										alignContent:'center',}}
+										paddingTop: '20%',
+										paddingBottom: '20%',
+										display: 'grid',
+										justifyContent: 'center',
+										alignContent: 'center',
+									}}
 									border={item.border}
 									backgroundColor={item.color}
 								>
@@ -92,27 +94,23 @@ const Cards = ({ card }) => {
 							</Grid>
 					  ))
 					: data.map((item) => (
-							<Grid item xs={4} key={item.id}>
+							<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
 								<Typography
 									style={{
 										fontFamily: 'georgia',
-										fontWeight:'bold',
+										fontWeight: 'bold',
 										borderRadius: '100%',
 										textAlign: 'center',
-										fontSize:'12px',
-										width: '70%',
-										height: '60%',
+										fontSize: '16px',
+										width: '25%',
+										height: '50%',
 										padding: '40%',
 										margin: '10%',
-										paddingTop:'20%',
-										paddingBottom:'20%',
-										display:'grid',
-										justifyContent:'center',
-										alignContent:'center',
-										
-
-										
-										
+										paddingTop: '20%',
+										paddingBottom: '20%',
+										display: 'grid',
+										justifyContent: 'center',
+										alignContent: 'center',
 									}}
 									border={item.border}
 									backgroundColor={item.color}
