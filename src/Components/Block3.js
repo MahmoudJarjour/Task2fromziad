@@ -44,10 +44,10 @@ const Block3 = () => {
 									<Typography
 										backgroundColor="gray"
 										style={{
-											fontFamily: 'Georgia',
+											fontFamily: 'Cairo',
 											color: 'white',
-											fontWeight:'bold',
-											fontSize:'13px',
+											fontWeight: 'bold',
+											fontSize: '13px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -64,9 +64,9 @@ const Block3 = () => {
 
 									<Typography
 										style={{
-											fontFamily: 'Georgia',
-											fontWeight:'bold',
-											fontSize:'13px',
+											fontFamily: 'Cairo',
+											fontWeight: 'bold',
+											fontSize: '13px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -86,7 +86,7 @@ const Block3 = () => {
 									<Typography
 										backgroundColor="gray"
 										style={{
-											fontFamily: 'Georgia',
+											fontFamily: 'Cairo',
 											color: 'white',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
@@ -104,7 +104,7 @@ const Block3 = () => {
 
 									<Typography
 										style={{
-											fontFamily: 'Georgia',
+											fontFamily: 'Cairo',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -122,7 +122,7 @@ const Block3 = () => {
 						  ))}
 				</Grid>
 				<br />
-				<Typography style={{ textAlign: getLanguage() === 'ar' ? 'right' : 'left', fontFamily: 'Georgia', fontWeight: 'revert' }} variant="subtitle1">
+				<Typography style={{ textAlign: getLanguage() === 'ar' ? 'right' : 'left', fontFamily: 'Cairo', fontWeight: 'revert' }} variant="subtitle1">
 					{t('The appeal shall be submitted through a lawyer.')}
 				</Typography>
 			</Container>

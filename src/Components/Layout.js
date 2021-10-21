@@ -7,7 +7,7 @@ import HeaderBar from './HeaderBar';
 import Home from '../Pages/Home';
 import { withTranslation, useTranslation } from 'react-i18next';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, theme }) => {
 	return (
 		<>
 			{/* App Bar */}

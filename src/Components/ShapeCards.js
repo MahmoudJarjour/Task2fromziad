@@ -49,19 +49,19 @@ const ShapeCards = () => {
 				<Grid container spacing={3} columnSpacing={12}>
 					{getLanguage() === 'en'
 						? data2.map((item) => (
-								<Grid item xs={12} sm={12} md={6} lg={4} xl={4}  key={item.id}>
+								<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
 									<Typography
 										backgroundColor="#B2FFFF"
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
 											width: '100%',
-											height:'20%',
+											height: '20%',
 											padding: '5%',
-											marginLeft:'-20px',
-											fontFamily: 'Georgia',
-											fontSize:'12px',
-											fontWeight:'bold',
+											marginLeft: '-20px',
+											fontFamily: 'Cairo',
+											fontSize: '12px',
+											fontWeight: 'bold',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -77,14 +77,14 @@ const ShapeCards = () => {
 										style={{
 											color: 'black',
 											backgroundColor: '#B2BEB5',
-											fontFamily: 'Georgia',
-											fontSize:'12px',
-											fontWeight:'bold',
+											fontFamily: 'Cairo',
+											fontSize: '12px',
+											fontWeight: 'bold',
 											width: '100%',
-											height:'20%',
+											height: '20%',
 											padding: '5%',
-											marginLeft:'-20px',
-											marginBottom:'10px',
+											marginLeft: '-20px',
+											marginBottom: '10px',
 											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
@@ -101,19 +101,19 @@ const ShapeCards = () => {
 								</Grid>
 						  ))
 						: data2Ar.map((item) => (
-								<Grid item xs={12} sm={12} md={6} lg={4} xl={4}  key={item.id}>
+								<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
 									<Typography
 										backgroundColor="#B2FFFF"
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'en' ? 'left' : 'right',
 											width: '100%',
-											height:'20%',
+											height: '20%',
 											padding: '5%',
-											marginLeft:'-20px',
-											fontFamily: 'Georgia',
-											fontSize:'12px',
-											fontWeight:'bold',
+											marginLeft: '-20px',
+											fontFamily: 'Cairo',
+											fontSize: '12px',
+											fontWeight: 'bold',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
 											borderTopRightRadius: '20px',
@@ -129,14 +129,14 @@ const ShapeCards = () => {
 										style={{
 											color: 'black',
 											backgroundColor: '#B2BEB5',
-											fontFamily: 'Georgia',
-											fontSize:'12px',
-											fontWeight:'bold',
+											fontFamily: 'Cairo',
+											fontSize: '12px',
+											fontWeight: 'bold',
 											width: '100%',
-											height:'20%',
+											height: '20%',
 											padding: '5%',
-											marginLeft:'20px',
-											marginBottom:'10px',
+											marginLeft: '20px',
+											marginBottom: '10px',
 											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
@@ -154,7 +154,7 @@ const ShapeCards = () => {
 						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1" style={{ color: 'white', fontFamily: 'Georgia', padding: '5px' }} backgroundColor="#0f9fc1" borderRadius>
+				<Typography variant="subtitle1" style={{ color: 'white', fontFamily: 'Cairo', padding: '5px' }} backgroundColor="#0f9fc1" borderRadius>
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>
