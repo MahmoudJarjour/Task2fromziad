@@ -9,7 +9,7 @@ import i18n from '../Locales/i18n';
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 const useStyles = makeStyles((theme) => ({
 	AppBarContainer: {
-		height: '30px',
+		height: '40px',
 	},
 	AppBar: {
 		backgroundColor: '#0f9fc1',
@@ -44,7 +44,7 @@ const HeaderBar = () => {
 							textAlign: 'center',
 						}}
 					>
-						<Typography style={{ fontFamily: 'serif', fontWeight: 'bold' }} variant="h6">
+						<Typography style={{ fontFamily: 'Cairo', fontWeight: 'bold', }} variant="h6">
 							{t('Criminal Court of Appeal :')}
 						</Typography>
 					</Container>

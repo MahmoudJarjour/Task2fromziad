@@ -46,19 +46,19 @@ const ShapeCards = () => {
 	return (
 		<>
 			<Container>
-				<Grid container spacing={16} columns={20}>
+				<Grid container spacing={3} columnSpacing={12}>
 					{getLanguage() === 'en'
 						? data2.map((item) => (
-								<Grid item xs={6} key={item.id}>
+								<Grid item xs={12} sm={12} md={6} lg={4} xl={4}  key={item.id}>
 									<Typography
 										backgroundColor="#B2FFFF"
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
-											width: '102%',
-											height: '25%',
+											width: '100%',
+											height:'20%',
 											padding: '5%',
-											margin: '10%',
+											marginLeft:'-20px',
 											fontFamily: 'Georgia',
 											fontSize:'12px',
 											fontWeight:'bold',
@@ -81,9 +81,10 @@ const ShapeCards = () => {
 											fontSize:'12px',
 											fontWeight:'bold',
 											width: '100%',
-											height: '35%',
-											padding: '7%',
-											margin: '10%',
+											height:'20%',
+											padding: '5%',
+											marginLeft:'-20px',
+											marginBottom:'10px',
 											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',
@@ -100,16 +101,16 @@ const ShapeCards = () => {
 								</Grid>
 						  ))
 						: data2Ar.map((item) => (
-								<Grid item xs={6} key={item.id}>
+								<Grid item xs={12} sm={12} md={6} lg={4} xl={4}  key={item.id}>
 									<Typography
 										backgroundColor="#B2FFFF"
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'en' ? 'left' : 'right',
-											width: '98%',
-											height: '25%',
-											padding: '7%',
-											margin: '10%',
+											width: '100%',
+											height:'20%',
+											padding: '5%',
+											marginLeft:'-20px',
 											fontFamily: 'Georgia',
 											fontSize:'12px',
 											fontWeight:'bold',
@@ -132,9 +133,10 @@ const ShapeCards = () => {
 											fontSize:'12px',
 											fontWeight:'bold',
 											width: '100%',
-											height: '25%',
-											padding: '7%',
-											margin: '10%',
+											height:'20%',
+											padding: '5%',
+											marginLeft:'20px',
+											marginBottom:'10px',
 											paddingBottom: '20px',
 											borderTopLeftRadius: '20px',
 											borderEndStartRadius: '20px',

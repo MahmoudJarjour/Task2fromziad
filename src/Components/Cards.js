@@ -12,25 +12,25 @@ const data = [
 		id: 1,
 		discription: 'Imprisonment, preventive detention or a ne of more than ve hundred thousand Lebanese pounds.',
 		color: '#F5F5F5',
-		border: '10px solid #A1CAF1',
+		border: '5px solid #93d2b9',
 	},
 	{
 		id: 2,
 		discription: 'Additional or secondary penalty or personal compensations of more than ve hundred thousand Lebanese pounds.',
 		color: '#F5F5F5',
-		border: '10px solid #DA1884',
+		border: '5px solid #e35e94',
 	},
 	{
 		id: 3,
 		discription: 'Revocation of defense stipulated in Article 73 of the Criminal Procedures Code.',
 		color: '#F5F5F5',
-		border: '10px solid #FE6F5E',
+		border: '5px solid #e35e94',
 	},
 	{
 		id: 4,
 		discription: 'Penalty for a violation correlative with a misdemeanor.',
 		color: '#F5F5F5',
-		border: '10px solid #318CE7',
+		border: '5px solid #93d2b9',
 	},
 ];
 
@@ -65,21 +65,20 @@ const Cards = ({ card }) => {
 	const { t } = useTranslation();
 	return (
 		<Container display="flex">
-			<Grid container  spacing={18} columnSpacing={16} >
+			<Grid container  spacing={6} rowSpacing={1} columns={12} >
 				{getLanguage() === 'ar'
 					? dataAr.map((item) => (
-							<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
+							<Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={item.id}>
 								<Typography
 									style={{
 										fontFamily: 'georgia',
 										fontWeight: 'bold',
-										borderRadius: '100%',
+										
 										textAlign: 'center',
-										fontSize: '16px',
+										fontSize: '15px',
 										width: '25%',
-										height: '45%',
+										height: '25%',
 										padding: '40%',
-										margin: '10%',
 										paddingTop: '20%',
 										paddingBottom: '20%',
 										display: 'grid',
@@ -94,18 +93,16 @@ const Cards = ({ card }) => {
 							</Grid>
 					  ))
 					: data.map((item) => (
-							<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
+							<Grid item xs={12} sm={12} md={6} lg={4} xl={3}  key={item.id}>
 								<Typography
 									style={{
 										fontFamily: 'georgia',
 										fontWeight: 'bold',
-										borderRadius: '100%',
 										textAlign: 'center',
-										fontSize: '16px',
-										width: '25%',
+										fontSize: '18px',
+										width: '50%',
 										height: '50%',
-										padding: '40%',
-										margin: '10%',
+										padding: '20%',
 										paddingTop: '20%',
 										paddingBottom: '20%',
 										display: 'grid',
@@ -121,7 +118,7 @@ const Cards = ({ card }) => {
 					  ))}
 			</Grid>
 			<Typography style={{ fontFamily: 'georgia', paddingBottom: '20px', paddingTop: '90px' }} variant="h5">
-				<PushPinTwoToneIcon color="success" fontSize="30px" />
+				
 				{t(
 					'The Court of Appeal is entitled, when exercising its tasks, to listen to witnesses, interrogate the parties of the lawsuit, invite new witnesses, appoint an expert, listen to experts and carry out any new investigations it deems appropriate...'
 				)}
