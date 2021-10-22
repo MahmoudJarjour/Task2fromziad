@@ -83,7 +83,7 @@ const Cards = ({ card }) => {
 								
 								<Grid
 									style={{
-										
+										borderRadius:'12px',
 										padding:'5%',
 										width: '100%',
 										height: '100%',
@@ -109,7 +109,7 @@ const Cards = ({ card }) => {
 								
 									<Grid
 									style={{
-										
+										borderRadius:'12px',
 										padding:'5%',
 										width: '100%',
 										height: '100%',

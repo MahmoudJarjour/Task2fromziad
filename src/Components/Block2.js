@@ -5,6 +5,7 @@ import Block3 from './Block3';
 import ShapeCards from './ShapeCards';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const Block2 = () => {
 	const { t } = useTranslation();
@@ -19,7 +20,7 @@ const Block2 = () => {
 					style={{ fontFamily: 'Cairo', backgroundColor: '#e8f4fd', color: 'black', borderRadius: '10px', padding: '10px' }}
 					variant="h5"
 					color="#0d3c61"
-					textAlign='center'
+					textAlign="center"
 				>
 					{t('Final judgments:')}
 				</Typography>
@@ -28,27 +29,33 @@ const Block2 = () => {
 				<br />
 				<Block3 />
 				<br />
-				<Grid container rowSpacing={1} columns={1}>
-					<Typography style={{ fontFamily: 'Cairo', fontWeight: 'bold' }}>{t('Decisions of the Court of Appeal:')}</Typography>
+				<Grid container>
+					<Typography style={{ fontFamily: 'Cairo', fontSize: '18px', fontWeight: 'bold' }}>{t('Decisions of the Court of Appeal:')}</Typography>
 
-					<Grid columnSpacing={{ xs: 6, sm: 6, md: 6 }}>
+					<Grid Grid container spacing={1}>
 						<Grid item xs={6}>
-							<Typography
-								style={{ fontFamily: 'Cairo', margin: '5px', display: 'grid', alignContent: 'center', justifyContent: 'center' }}
-								backgroundColor="#C0E8D5"
-								borderRadius
+							<Grid
+								style={{
+									fontFamily: 'Cairo',
+									backgroundColor: '#fdecea',
+									color: '#611a15',
+								}}
 							>
+								<TaskAltIcon style={{ color: '#611a15' }} />
 								{t('Dissolution of the appealed judgment.')}
-							</Typography>
+							</Grid>
 						</Grid>
 						<Grid item xs={6}>
-							<Typography
-								style={{ fontFamily: 'Cairo', margin: '5px', display: 'grid', justifyContent: 'center', alignContent: 'center' }}
-								backgroundColor="#C0E8D5"
-								borderRadius
+							<Grid
+								style={{
+									fontFamily: 'Cairo',
+									backgroundColor: '#C0E8D5',
+									color: '#1e4620',
+								}}
 							>
+								<TaskAltIcon style={{ color: '#1e4620' }} />
 								{t('Legalization of the appealed judgment.')}
-							</Typography>
+							</Grid>
 						</Grid>
 					</Grid>
 				</Grid>
