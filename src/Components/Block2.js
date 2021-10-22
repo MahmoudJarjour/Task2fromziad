@@ -11,7 +11,7 @@ const Block2 = () => {
 	return (
 		<>
 			<Container>
-				<Typography style={{ fontFamily: 'Cairo', fontWeight: 'bold', textDecoration: 'underline' }} variant="h4">
+				<Typography style={{ fontFamily: 'Cairo', fontWeight: '900', textDecoration: 'underline' }} variant="h4">
 					{t('Delay of appeal:')}
 				</Typography>
 				<br />

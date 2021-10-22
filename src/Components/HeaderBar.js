@@ -26,8 +26,7 @@ const HeaderBar = () => {
 				<Toolbar>
 					<Container
 						xs={12}
-						sm={6}
-						lg={4}
+						
 						style={{
 							borderRadius: '120px',
 							backgroundColor: 'white',
