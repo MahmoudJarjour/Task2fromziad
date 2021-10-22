@@ -16,13 +16,13 @@ const data2 = [
 	{
 		id: 2,
 		cardheader: 'With respect to the Appellate Public Prosecutor:',
-		cardsubheader: 'the delay is (1) month:',
+		cardsubheader: 'the delay is (1) month',
 		cardcontent: '* As of the date of issuance of the judgment.',
 	},
 	{
 		id: 3,
 		cardheader: 'With respect to the Appellate Public Prosecution: ',
-		cardsubheader: 'the delay is (2) months:',
+		cardsubheader: 'the delay is (2) months',
 		cardcontent: '* As of the date of issuance of the judgment.',
 	},
 ];
@@ -57,27 +57,29 @@ const ShapeCards = () => {
 					{getLanguage() === 'en'
 						? data2.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{border:'1px solid green', borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{fontFamily:'Cairo'}} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}} ></CardHeader>
-										<Divider orientation="horizontal" variant="middle" style={{color:'#008000'}} />
-										<CardContent style={{fontFamily:'Cairo', fontWeight:'600'}}>
-											
-												{item.cardcontent}
-										
-										</CardContent>
+									<Card style={{ border: '1px solid green', borderRadius: '12px' }}>
+										<CardHeader
+											title={item.cardheader}
+											subheader={item.cardsubheader}
+											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
+										></CardHeader>
+										<Divider orientation="horizontal" variant="middle" style={{ color: '#008000' }} />
+										<CardContent style={{ fontFamily: 'Cairo', fontWeight: '600' }}>{item.cardcontent}</CardContent>
 									</Card>
 								</Grid>
 						  ))
 						: data2Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{border:'1px solid green', borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{fontFamily:'Cairo'}} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}}></CardHeader>
+									<Card style={{ border: '1px solid green', borderRadius: '12px' }}>
+										<CardHeader
+											title={item.cardheader}
+											subheader={item.cardsubheader}
+											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
+										></CardHeader>
 										<Divider orientation="horizontal" variant="middle" />
-										<CardContent style={{fontFamily:'Cairo', fontWeight:'600'}}>
-											
-												{item.cardcontent}
-											
-										</CardContent>
+										<CardContent style={{ fontFamily: 'Cairo', fontWeight: '600' }}>{item.cardcontent}</CardContent>
 									</Card>
 								</Grid>
 						  ))}
@@ -93,7 +95,7 @@ const ShapeCards = () => {
 						fontWeight: '500',
 						fontSize: '23px',
 						padding: '15px',
-						marginTop:'12px'
+						marginTop: '12px',
 					}}
 					variant="h5"
 				>
