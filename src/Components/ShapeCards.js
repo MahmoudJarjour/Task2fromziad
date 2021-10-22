@@ -1,25 +1,28 @@
-import { Grid, Container, Typography } from '@mui/material';
+import { Grid, Container, Typography, Box, Card, CardContent, CardHeader, Divider } from '@mui/material';
 import React from 'react';
 import { useTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
-
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 const data2 = [
 	{
 		id: 1,
-		cardheader: 'With respect to the plaintiff, defendant, responsible for money, and guarantor, the delay is 15 days:',
+		cardheader: 'With respect to the plaintiff, defendant, responsible for money, and guarantor: ',
+		cardsubheader: 'the delay is (10) days',
 		cardcontent: '* As of the date of its issuance if it is made in presentia. * As of the date of being notied whether it is made in presentia or absentia.',
 	},
 	{
 		id: 2,
-		cardheader: 'With respect to the Appellate Public Prosecutor, the delay is one month:',
+		cardheader: 'With respect to the Appellate Public Prosecutor:',
+		cardsubheader: 'the delay is (1) month:',
 		cardcontent: '* As of the date of issuance of the judgment.',
 	},
 	{
 		id: 3,
-		cardheader: 'With respect to the Appellate Public Prosecution, the delay is two months:',
+		cardheader: 'With respect to the Appellate Public Prosecution: ',
+		cardsubheader: 'the delay is (2) months:',
 		cardcontent: '* As of the date of issuance of the judgment.',
 	},
 ];
@@ -27,17 +30,20 @@ const data2 = [
 const data2Ar = [
 	{
 		id: 1,
-		cardheader: 'بالنسبة للمدعي والمدعى عليه والضامن والمسؤول بالمال ، المهلة هي ١٠ يوما :',
+		cardheader: 'بالنسبة للمدعي والمدعى عليه والضامن والمسؤول بالمال :',
+		cardsubheader: 'المهلة هي (١٠) يوما ',
 		cardcontent: '* من تاريخ صدور الحكم إذا كان وجاهيا  ، *من تاريخ تبليغه إذا مان بمثابة الوجاهي أو غيابيا',
 	},
 	{
 		id: 2,
-		cardheader: 'بالنسبة للنائب العام الاستئنافي المهلة هي شهرا :',
+		cardheader: 'بالنسبة للنائب العام الاستئنافي :',
+		cardsubheader: 'المهلة هي (١) شهر',
 		cardcontent: '* من تاريخ صدور الحكم',
 	},
 	{
 		id: 3,
-		cardheader: 'بالنسبة للنيابة العامة الاستئنافية المهلة هي شهران ',
+		cardheader: 'بالنسبة للنيابة العامة الاستئنافية : ',
+		cardsubheader: ' المهلة هي (٢) شهر',
 		cardcontent: '* من تاريخ صدور الحكم ',
 	},
 ];
@@ -51,72 +57,66 @@ const ShapeCards = () => {
 					{getLanguage() === 'en'
 						? data2.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Typography
-										backgroundColor="#e8f4fd"
-										style={{
-											border: '1px solid #00FFFF',
-											textAlign: getLanguage() === 'en' ? 'left' : 'right',
-											width: '100%',
-											fontFamily: 'Cairo',
-											display: 'Grid',
-											alignContent: 'center',
-											justifyContent: 'center',
-										}}
-									>
-										{item.cardheader}
-									</Typography>
-									
-									<Typography
-										style={{
-											color: 'black',
-											
-											fontFamily: 'Cairo',
-											width: '100%',
-											display: 'grid',
-											alignContent: 'center',
-											
-										}}
-										
-									>
-										{item.cardcontent}
-									</Typography>
+									<Card style={{border:'1px solid green'}}>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+										<Divider orientation="horizontal" variant="middle" style={{color:'#008000'}} />
+										<CardContent>
+											<Typography
+												style={{
+													color: 'black',
+													fontFamily: 'Cairo',
+													width: '100%',
+													display: 'grid',
+													alignContent: 'center',
+													fontSize:'18px'
+												}}
+											>
+												{item.cardcontent}
+											</Typography>
+										</CardContent>
+									</Card>
 								</Grid>
 						  ))
 						: data2Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Typography
-										backgroundColor="#e8f4fd"
-										style={{
-											border: '1px solid #00FFFF',
-											textAlign: getLanguage() === 'en' ? 'left' : 'right',
-											width: '100%',
-											fontFamily: 'Cairo',
-											display: 'Grid',
-											alignContent: 'center',
-											justifyContent: 'center',
-										}}
-									>
-										{item.cardheader}
-									</Typography>
-									
-									<Typography
-										style={{
-											color: 'black',
-											
-											fontFamily: 'Cairo',
-											width: '100%',
-											display: 'grid',
-											alignContent: 'center',
-											
-										}}
-									>
-										{item.cardcontent}
-									</Typography>
+									<Card>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+										<Divider orientation="horizontal" variant="middle" />
+										<CardContent>
+											<Typography
+												style={{
+													color: 'black',
+													fontFamily: 'Cairo',
+													width: '100%',
+													display: 'grid',
+													alignContent: 'center',
+													fontSize:'18px'
+												}}
+											>
+												{item.cardcontent}
+											</Typography>
+										</CardContent>
+									</Card>
 								</Grid>
 						  ))}
 				</Grid>
-				<br />
-				<Typography variant="subtitle1" style={{ color: 'black', fontFamily: 'Cairo', padding: '5px' }} backgroundColor="#e8f4fd" borderRadius>
+
+				<Typography
+					style={{
+						backgroundColor: '#fff4e5',
+						color: '#663C01',
+						fontFamily: 'Cairo',
+						paddingBottom: '20px',
+						paddingTop: '60px',
+						fontWeight: '500',
+						fontSize: '23px',
+						padding: '15px',
+						marginTop:'12px'
+					}}
+					variant="h5"
+				>
+					<TaskAltIcon style={{ color: '#ff9800' }} />
+
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>

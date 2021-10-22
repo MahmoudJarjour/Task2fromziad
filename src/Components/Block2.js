@@ -18,7 +18,7 @@ const Block2 = () => {
 				<Typography
 					style={{ fontFamily: 'Cairo', backgroundColor: '#e8f4fd', color: 'black', borderRadius: '10px', padding: '10px' }}
 					variant="h5"
-					color="#E52B50"
+					color="#0d3c61"
 					textAlign='center'
 				>
 					{t('Final judgments:')}
