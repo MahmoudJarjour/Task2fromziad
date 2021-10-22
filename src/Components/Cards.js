@@ -12,25 +12,25 @@ const data = [
 		id: 1,
 		discription: 'Imprisonment, preventive detention or a ne of more than ve hundred thousand Lebanese pounds.',
 		color: '#F5F5F5',
-		border: '1px solid #93d2b9',
+		border: '10px solid #93d2b9',
 	},
 	{
 		id: 2,
 		discription: 'Additional or secondary penalty or personal compensations of more than ve hundred thousand Lebanese pounds.',
 		color: '#F5F5F5',
-		border: '1px solid #e35e94',
+		border: '10px solid #e35e94',
 	},
 	{
 		id: 3,
 		discription: 'Revocation of defense stipulated in Article 73 of the Criminal Procedures Code.',
 		color: '#F5F5F5',
-		border: '1px solid #e35e94',
+		border: '10px solid #e35e94',
 	},
 	{
 		id: 4,
 		discription: 'Penalty for a violation correlative with a misdemeanor.',
 		color: '#F5F5F5',
-		border: '1px solid #93d2b9',
+		border: '10px solid #93d2b9',
 	},
 ];
 
@@ -39,44 +39,68 @@ const dataAr = [
 		id: 1,
 		discription: 'الحبس أو التوقيف التكديري أو غرامة تزيد على ٥٠٠ ألف ليرة لبنانية',
 		color: '#F5F5F5',
-		border: '10px solid #A1CAF1',
+		border: '10px solid #93d2b9',
 	},
 	{
 		id: 2,
 		discription: 'عقوبة إضافية أو فرعية أو تعويضات شخصية تزيد على الخمسمائة ألف ليرة لبنانية',
 		color: '#F5F5F5',
-		border: '10px solid #DA1884',
+		border: '10px solid #e35e94',
 	},
 	{
 		id: 3,
 		discription: 'رد من الدفوع المنصوص عليها في المادة ٧٣ من قانون أصول المحاكمات الجزائية',
 		color: '#F5F5F5',
-		border: '10px solid #FE6F5E',
+		border: '10px solid #93d2b9',
 	},
 	{
 		id: 4,
 		discription: 'عقوبة لمخالفة متلازمة مع جنحة',
 		color: '#F5F5F5',
-		border: '10px solid #318CE7',
+		border: '10px solid #e35e94',
 	},
 ];
 
 const Cards = ({ card }) => {
 	const { t } = useTranslation();
 	return (
-		<Container display="flex">
+		<Container display="Grid">
 			<Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 				{getLanguage() === 'ar'
 					? dataAr.map((item) => (
-							<Grid item xs={12} sm={8} md={6} lg={3} justifyContent="space-evenly" alignItems="center" key={item.id}>
-								<Typography style={{}} border={item.border} backgroundColor={item.color}>
+							<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
+								<Typography
+									style={{
+										borderRadius: '10px 100px / 120px',
+										width: '100%',
+										height: '100%',
+										display: 'Grid',
+										textAlign: 'center',
+										justifyContent: 'center',
+										alignContent: 'center',
+									}}
+									border={item.border}
+									backgroundColor={item.color}
+								>
 									{item.discription}
 								</Typography>
 							</Grid>
 					  ))
 					: data.map((item) => (
-							<Grid item xs={12} sm={8} md={6} lg={3} justifyContent="space-evenly" alignItems="center" key={item.id}>
-								<Typography style={{}} border={item.border} backgroundColor={item.color}>
+							<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
+								<Typography
+									style={{
+										borderRadius: '120px / 10px 100px',
+										width: '100%',
+										height: '100%',
+										display: 'Grid',
+										textAlign: 'center',
+										justifyContent: 'center',
+										alignContent: 'center',
+									}}
+									border={item.border}
+									backgroundColor={item.color}
+								>
 									{item.discription}
 								</Typography>
 							</Grid>
