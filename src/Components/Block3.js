@@ -46,19 +46,19 @@ const Block3 = () => {
 					{getLanguage() === 'en'
 						? data3.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+									<Card style={{borderRadius:'12px' , fontFamily: 'Cairo' }}>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{ fontFamily: 'Cairo' }} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}}></CardHeader>
 										<Divider variant="middle" orientation="horizontal" />
-										<CardContent>{item.cardcontent}</CardContent>
+										<CardContent style={{fontFamily:'Cairo'}}>{item.cardcontent}</CardContent>
 									</Card>
 								</Grid>
 						  ))
 						: data3Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+									<Card style={{borderRadius:'12px', fontFamily: 'Cairo' }}>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{ fontFamily: 'Cairo' }} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}}></CardHeader>
 										<Divider variant="middle" orientation="horizontal" />
-										<CardContent>{item.cardcontent}</CardContent>
+										<CardContent style={{fontFamily:'Cairo'}}>{item.cardcontent}</CardContent>
 									</Card>
 								</Grid>
 						  ))}
@@ -75,7 +75,7 @@ const Block3 = () => {
 					}}
 					variant="subtitle1"
 				>
-					<AddTaskIcon style={{ color: '#663c00', width: '30', height: '18', paddingTop: '10px'}}/>
+					<AddTaskIcon style={{ color: '#663c00', width: '30', height: '18', paddingTop: '10px' , fontFamily: 'Cairo' }}/>
 					{t('The appeal shall be submitted through a lawyer.')}
 				</Typography>
 			</Container>

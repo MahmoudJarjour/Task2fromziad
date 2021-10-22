@@ -58,21 +58,12 @@ const ShapeCards = () => {
 						? data2.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Card style={{border:'1px solid green', borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{fontFamily:'Cairo'}} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}} ></CardHeader>
 										<Divider orientation="horizontal" variant="middle" style={{color:'#008000'}} />
-										<CardContent>
-											<Typography
-												style={{
-													color: 'black',
-													fontFamily: 'Cairo',
-													width: '100%',
-													display: 'grid',
-													alignContent: 'center',
-													fontSize:'18px'
-												}}
-											>
+										<CardContent style={{fontFamily:'Cairo', fontWeight:'600'}}>
+											
 												{item.cardcontent}
-											</Typography>
+										
 										</CardContent>
 									</Card>
 								</Grid>
@@ -80,21 +71,12 @@ const ShapeCards = () => {
 						: data2Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Card style={{border:'1px solid green', borderRadius:'12px'}}>
-										<CardHeader title={item.cardheader} subheader={item.cardsubheader}></CardHeader>
+										<CardHeader title={item.cardheader} subheader={item.cardsubheader} subheaderTypographyProps={{fontFamily:'Cairo'}} titleTypographyProps={{fontFamily:'Cairo' , fontWeight:'800'}}></CardHeader>
 										<Divider orientation="horizontal" variant="middle" />
-										<CardContent>
-											<Typography
-												style={{
-													color: 'black',
-													fontFamily: 'Cairo',
-													width: '100%',
-													display: 'grid',
-													alignContent: 'center',
-													fontSize:'18px'
-												}}
-											>
+										<CardContent style={{fontFamily:'Cairo', fontWeight:'600'}}>
+											
 												{item.cardcontent}
-											</Typography>
+											
 										</CardContent>
 									</Card>
 								</Grid>
