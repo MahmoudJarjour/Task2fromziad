@@ -57,7 +57,7 @@ const ShapeCards = () => {
 					{getLanguage() === 'en'
 						? data2.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{ border: '1px solid green', borderRadius: '12px' }}>
+									<Card style={{ border: '1px solid red', borderRadius: '12px' }}>
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
@@ -71,7 +71,7 @@ const ShapeCards = () => {
 						  ))
 						: data2Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{ border: '1px solid green', borderRadius: '12px' }}>
+									<Card style={{ border: '1px solid red', borderRadius: '12px' }}>
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}

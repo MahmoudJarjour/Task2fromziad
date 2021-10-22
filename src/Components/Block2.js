@@ -29,10 +29,10 @@ const Block2 = () => {
 				<br />
 				<Block3 />
 				<br />
-				<Grid container>
+				<Grid container paddingTop='10px'>
 					<Typography style={{ fontFamily: 'Cairo', fontSize: '18px', fontWeight: 'bold' }}>{t('Decisions of the Court of Appeal:')}</Typography>
 
-					<Grid Grid container spacing={1}>
+					<Grid Grid container spacing={2} paddingTop='10px'>
 						<Grid item xs={6}>
 							<Grid
 								style={{
