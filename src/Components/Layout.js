@@ -10,15 +10,18 @@ import { withTranslation, useTranslation } from 'react-i18next';
 const Layout = ({ children, theme }) => {
 	return (
 		<>
-			{/* App Bar */}
-
+			{/* App  Bar 
 			<Container>
 				<HeaderBar />
-			</Container>
+			</Container> 
+			
+			*/}
+
+			
 
 			{/* Content */}
 
-			<Container>{children}</Container>
+			{children}
 
 			{/* Grids */}
 		</>

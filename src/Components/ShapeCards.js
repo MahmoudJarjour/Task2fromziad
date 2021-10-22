@@ -4,6 +4,7 @@ import { useTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
 
+
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 const data2 = [
 	{
@@ -46,107 +47,68 @@ const ShapeCards = () => {
 	return (
 		<>
 			<Container>
-				<Grid container spacing={3} columnSpacing={12}>
+				<Grid Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 					{getLanguage() === 'en'
 						? data2.map((item) => (
-								<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
+								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Typography
-										backgroundColor="#B2FFFF"
+										backgroundColor="#e8f4fd"
 										style={{
 											border: '1px solid #00FFFF',
-											textAlign: getLanguage() === 'ar' ? 'right' : 'left',
+											textAlign: getLanguage() === 'en' ? 'left' : 'right',
 											width: '100%',
-											height: '20%',
-											padding: '5%',
-											marginLeft: '-20px',
 											fontFamily: 'Cairo',
-											fontSize: '12px',
-											fontWeight: 'bold',
-											borderTopLeftRadius: '20px',
-											borderEndStartRadius: '20px',
-											borderTopRightRadius: '20px',
-											borderBottomRightRadius: '20px',
-											display: 'grid',
+											display: 'Grid',
 											alignContent: 'center',
 											justifyContent: 'center',
 										}}
 									>
 										{item.cardheader}
 									</Typography>
+									
 									<Typography
 										style={{
 											color: 'black',
-											backgroundColor: '#B2BEB5',
+											
 											fontFamily: 'Cairo',
-											fontSize: '12px',
-											fontWeight: 'bold',
 											width: '100%',
-											height: '20%',
-											padding: '5%',
-											marginLeft: '-20px',
-											marginBottom: '10px',
-											paddingBottom: '20px',
-											borderTopLeftRadius: '20px',
-											borderEndStartRadius: '20px',
-											borderTopRightRadius: '20px',
-											borderEndEndRadius: '20px',
 											display: 'grid',
 											alignContent: 'center',
-											justifyContent: 'center',
+											
 										}}
-										borderRadius
+										
 									>
 										{item.cardcontent}
 									</Typography>
 								</Grid>
 						  ))
 						: data2Ar.map((item) => (
-								<Grid item xs={12} sm={12} md={6} lg={4} xl={4} key={item.id}>
+								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Typography
-										backgroundColor="#B2FFFF"
+										backgroundColor="#e8f4fd"
 										style={{
 											border: '1px solid #00FFFF',
 											textAlign: getLanguage() === 'en' ? 'left' : 'right',
 											width: '100%',
-											height: '20%',
-											padding: '5%',
-											marginLeft: '-20px',
 											fontFamily: 'Cairo',
-											fontSize: '12px',
-											fontWeight: 'bold',
-											borderTopLeftRadius: '20px',
-											borderEndStartRadius: '20px',
-											borderTopRightRadius: '20px',
-											borderEndEndRadius: '20px',
-											display: 'grid',
+											display: 'Grid',
 											alignContent: 'center',
 											justifyContent: 'center',
 										}}
 									>
 										{item.cardheader}
 									</Typography>
+									
 									<Typography
 										style={{
 											color: 'black',
-											backgroundColor: '#B2BEB5',
+											
 											fontFamily: 'Cairo',
-											fontSize: '12px',
-											fontWeight: 'bold',
 											width: '100%',
-											height: '20%',
-											padding: '5%',
-											marginLeft: '20px',
-											marginBottom: '10px',
-											paddingBottom: '20px',
-											borderTopLeftRadius: '20px',
-											borderEndStartRadius: '20px',
-											borderTopRightRadius: '20px',
-											borderEndEndRadius: '20px',
 											display: 'grid',
 											alignContent: 'center',
-											justifyContent: 'center',
+											
 										}}
-										borderRadius
 									>
 										{item.cardcontent}
 									</Typography>
@@ -154,7 +116,7 @@ const ShapeCards = () => {
 						  ))}
 				</Grid>
 				<br />
-				<Typography variant="subtitle1" style={{ color: 'white', fontFamily: 'Cairo', padding: '5px' }} backgroundColor="#0f9fc1" borderRadius>
+				<Typography variant="subtitle1" style={{ color: 'black', fontFamily: 'Cairo', padding: '5px' }} backgroundColor="#e8f4fd" borderRadius>
 					{t('Decision on revoking or accepting the defenses stated in Article 73 of the Criminal Procedures Code:')}
 				</Typography>
 			</Container>

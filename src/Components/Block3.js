@@ -3,6 +3,7 @@ import { Grid, Container, Typography } from '@mui/material';
 import { useTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import i18n from '../Locales/i18n';
+import AddTaskIcon from '@mui/icons-material/AddTask';
 
 const getLanguage = () => i18next.language || window.localStorage.i18nextLng;
 
@@ -37,10 +38,10 @@ const Block3 = () => {
 	return (
 		<>
 			<Container>
-				<Grid container spacing={15} columns={16}>
+				<Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 					{getLanguage() === 'en'
 						? data3.map((item) => (
-								<Grid item xs={6} key={item.id}>
+								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Typography
 										backgroundColor="gray"
 										style={{
@@ -82,7 +83,7 @@ const Block3 = () => {
 								</Grid>
 						  ))
 						: data3Ar.map((item) => (
-								<Grid item xs={6} key={item.id}>
+								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Typography
 										backgroundColor="gray"
 										style={{
@@ -122,7 +123,9 @@ const Block3 = () => {
 						  ))}
 				</Grid>
 				<br />
-				<Typography style={{ textAlign: getLanguage() === 'ar' ? 'right' : 'left', fontFamily: 'Cairo', fontWeight: 'revert' }} variant="subtitle1">
+				
+				<Typography style={{backgroundColor:'#fff4e5',color:'#663c00', textAlign: getLanguage() === 'ar' ? 'right' : 'left', fontFamily: 'Cairo', fontWeight: 'revert' }} variant="subtitle1">
+				<AddTaskIcon style={{ color: '#663c00', width: '30', height: '18', paddingTop: '10px', transform: getLanguage() === 'en' ? 'scaleX(-1)' : '' }}/>
 					{t('The appeal shall be submitted through a lawyer.')}
 				</Typography>
 			</Container>
