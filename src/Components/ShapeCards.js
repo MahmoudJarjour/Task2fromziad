@@ -53,7 +53,7 @@ const ShapeCards = () => {
 	return (
 		<>
 			<Container>
-				<Grid Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+				<Grid Grid container  spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 					{getLanguage() === 'en'
 						? data2.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
@@ -61,7 +61,7 @@ const ShapeCards = () => {
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
-											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											subheaderTypographyProps={{ fontFamily: 'Cairo' , fontWeight:'900' }}
 											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
 										></CardHeader>
 										<Divider orientation="horizontal" variant="middle" style={{ color: '#008000' }} />
@@ -75,7 +75,7 @@ const ShapeCards = () => {
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
-											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											subheaderTypographyProps={{ fontFamily: 'Cairo', fontWeight:'900' }}
 											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
 										></CardHeader>
 										<Divider orientation="horizontal" variant="middle" />

@@ -50,7 +50,7 @@ const Block3 = () => {
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
-											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											subheaderTypographyProps={{ fontFamily: 'Cairo', fontWeight:'900' }}
 											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
 										></CardHeader>
 										<Divider variant="middle" orientation="horizontal" />
@@ -61,10 +61,10 @@ const Block3 = () => {
 						: data3Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
 									<Card style={{ border: '1px solid #93d2b9', borderRadius: '12px', fontFamily: 'Cairo' }}>
-										<CardHeader
+										<CardHeader 
 											title={item.cardheader}
 											subheader={item.cardsubheader}
-											subheaderTypographyProps={{ fontFamily: 'Cairo' }}
+											subheaderTypographyProps={{ fontFamily: 'Cairo', fontWeight:'900' }}
 											titleTypographyProps={{ fontFamily: 'Cairo', fontWeight: '800' }}
 										></CardHeader>
 										<Divider variant="middle" orientation="horizontal" />
