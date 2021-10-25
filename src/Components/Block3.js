@@ -46,7 +46,7 @@ const Block3 = () => {
 					{getLanguage() === 'en'
 						? data3.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{border: '1px solid green', borderRadius: '12px', fontFamily: 'Cairo' }}>
+									<Card style={{border: '1px solid #93d2b9', borderRadius: '12px', fontFamily: 'Cairo' }}>
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
@@ -60,7 +60,7 @@ const Block3 = () => {
 						  ))
 						: data3Ar.map((item) => (
 								<Grid item xs={12} sm={8} md={6} lg={6} justifyContent="space-evenly" alignItems="center" key={item.id}>
-									<Card style={{ border: '1px solid green', borderRadius: '12px', fontFamily: 'Cairo' }}>
+									<Card style={{ border: '1px solid #93d2b9', borderRadius: '12px', fontFamily: 'Cairo' }}>
 										<CardHeader
 											title={item.cardheader}
 											subheader={item.cardsubheader}
