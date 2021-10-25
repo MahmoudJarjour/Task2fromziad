@@ -19,7 +19,60 @@ const Block1 = () => {
 	const classes = useStyles();
 	return (
 		<Container xs={12} sm={12} md={12} lg={12} className={classes.bodyblock1}>
-			<Typography style={{ fontWeight: '900', fontFamily: 'Cairo' }} variant="h4">
+			<Container
+						xs={12}
+						style={{
+							borderRadius: '12px',
+							backgroundColor: 'white',
+							color: 'black',
+							width: '30%',
+							
+							
+						}}
+					>
+						<Typography
+							style={{
+								fontFamily: 'Cairo',
+								fontWeight: 'bold',
+								fontSize: '2rem',
+								textAlign:'center'
+							}}
+						>
+							{t('Criminal Court of Appeal :')}
+						</Typography>
+					</Container>
+
+					<Container paddingLeft="-10px" xs={12} sm={6} lg={4}>
+						<Typography
+							style={{ fontSize: '1rem', fontFamily: 'Cairo',  }}
+							variant="subtitle1"
+							paddingTop='10px'
+						>
+							{t('- Within every governorate, there is one or more courts of appeal.')}
+						</Typography>
+						<Typography
+							style={{
+								fontSize: '1rem',
+								fontFamily: 'Cairo',
+								
+							}}
+							variant="subtitle1"
+						>
+							{t('- The Court of Appeal consists of 3 judges: a president and two consultants.')}
+						</Typography>
+						<Typography
+							style={{
+								fontSize: '1rem',
+								fontFamily: 'Cairo',
+								
+							}}
+							variant="subtitle1"
+						>
+							{t('- The public prosecution is represented before the Court of Appeal by the Appellate Public Prosecutor or an Attorney General.')}
+						</Typography>
+					</Container>
+					{/*============================================================== */}
+			<Typography style={{ fontWeight: '900', fontFamily: 'Cairo' }} variant="h4" paddingTop='10px'>
 				{t('Their jurisdiction:')}
 			</Typography>
 
